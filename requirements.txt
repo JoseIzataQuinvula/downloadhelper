@@ -1,0 +1,4 @@
+customtkinter>=5.2.2
+yt-dlp>=2024.10.22
+Pillow>=10.0.0
+requests>=2.31.0
