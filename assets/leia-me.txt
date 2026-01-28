@@ -1,0 +1,36 @@
+============================================================
+           DOWNLOAD HELPER - VERSÃO BETA 1.0
+============================================================
+
+Desenvolvido por: José Izata Quivula
+
+SOBRE O SOFTWARE:
+O Download Helper é uma ferramenta prática desenvolvida para 
+facilitar o download de vídeos e áudios de diversas 
+plataformas online, garantindo qualidade e rapidez.
+
+AVISO DE VERSÃO BETA:
+Este software ainda está em fase de desenvolvimento (BETA). 
+Isso significa que o objetivo atual é testar as 
+funcionalidades principais. Você pode encontrar alguns bugs 
+ou comportamentos inesperados.
+
+REQUISITOS E DEPENDÊNCIAS:
+- O software já inclui os componentes necessários (FFmpeg).
+- É necessária uma conexão estável com a internet.
+- Certifique-se de ter permissões de escrita na pasta de 
+  destino dos downloads.
+
+COMO USAR:
+1. Cole a URL do vídeo desejado no campo indicado.
+2. Clique em "Analisar" para carregar as informações.
+3. Escolha a qualidade desejada na janela que abrirá.
+4. O progresso será exibido na tela principal.
+
+CONTATO E FEEDBACK:
+Se encontrar problemas ou tiver sugestões para melhorar o 
+Download Helper, entre em contato com o desenvolvedor.
+
+------------------------------------------------------------
+Copyright © 2026 - José Izata Quivula. Todos os direitos reservados.
+============================================================
