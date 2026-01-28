@@ -1,21 +1,23 @@
+
 # DownloadHelper - YouTube Download Manager
 
-Este repositório contém o código-fonte do DownloadHelper, uma ferramenta de código aberto desenvolvida em Python para o gerenciamento avançado de downloads do YouTube. O projeto foca em precisão de status de arquivos e suporte a operações retomáveis (pausa/continuação).
+Este repositório contém o código-fonte do **DownloadHelper**, uma ferramenta de código aberto desenvolvida em Python para o gerenciamento avançado de downloads do YouTube. O projeto foca em precisão de status de arquivos e suporte a operações retomáveis (pausa/continuação).
 
 ## Visão Geral
 
-O DownloadHelper foi projetado para oferecer uma interface de gestão de downloads estável. A lógica principal permite o processamento de vídeos individuais e playlists, garantindo integridade de dados através da sincronização com os binários do FFmpeg e um sistema de monitoramento de disco em tempo real.
+O DownloadHelper foi projetado para oferecer uma interface de gestão de downloads estável. A lógica principal permite o processamento de vídeos individuais e playlists, garantindo integridade de dados através da sincronização com os motores do `yt-dlp`, binários do `FFmpeg` e um sistema de monitoramento em tempo real.
 
 ---
 
-## Arquitetura de Pastas
+## Arquitetura de Pastas (Estrutura Completa)
 
-A organização do diretório segue o padrão de separação de responsabilidades:
+A organização do diretório segue o padrão de separação de responsabilidades para facilitar a manutenção e o porte entre plataformas:
 
-* **Raiz:** Ponto de entrada (`download_helper.py`), dependências (`requirements.txt`) e configuração de build.
-* **ffmpeg/:** Binários obrigatórios (`ffmpeg.exe`, `ffprobe.exe`) para muxing e conversão de mídia.
-* **assets/:** Recursos visuais e identidade gráfica (`icon.png`).
-* **dist/:** (Gerado) Contém o executável final empacotado para o usuário.
+* **Raiz:** Contém o ponto de entrada (`main.py`), dependências (`requirements.txt`) e scripts de build (`downloadhelper.spec`, `buildozer.spec`, `setup.iss`).
+* **core/:** Lógica de processamento, configurações e funções auxiliares.
+* **ui/ & kv/:** Separação da lógica de comportamento (Python) e design visual (Kivy Language).
+* **ffmpeg/:** Binários para conversão de mídia (necessários para a versão desktop).
+* **assets/:** Identidade gráfica, ícones e recursos visuais para todas as plataformas.
 
 ---
 
@@ -23,10 +25,11 @@ A organização do diretório segue o padrão de separação de responsabilidade
 
 O desenvolvimento priorizou a portabilidade e a automação de processos de mídia:
 
-* **Linguagem:** Python 3.x com processamento assíncrono para UI e downloads.
-* **Dependências:** Gerenciadas via `requirements.txt`.
+* **Linguagem:** Python 3.13+ com framework Kivy/KivyMD.
 * **Processamento de Mídia:** Integração nativa com FFmpeg para alta fidelidade de áudio e vídeo.
-* **Distribuição:** Compilação via PyInstaller para geração de executável único.
+* **Multiplataforma:**
+* **Windows:** Compilação via PyInstaller e instalador profissional via Inno Setup.
+* **Android:** Geração de APK via Buildozer (Linux/Ubuntu).
 
 ---
 
@@ -50,20 +53,30 @@ cd download-helper
 Instale as dependências:
 
 Bash
-
 pip install -r requirements.txt
 Execução:
 
-Certifique-se de que os binários do FFmpeg estão na pasta raiz e execute:
+Bash
+python main.py
+Compilação e Distribuição
+Para Windows (EXE)
+Utilize o PyInstaller com o arquivo de configuração otimizado:
 
 Bash
+pyinstaller --noconfirm downloadhelper.spec
+Para criar o instalador profissional, utilize o Inno Setup carregando o arquivo setup.iss.
 
-python download_helper.py
-Build de Distribuição
-Para gerar o executável final para Windows:
+Para Android (APK)
+Em um ambiente Linux (Ubuntu), execute:
 
 Bash
+buildozer android debug
+Licença
+Este projeto é de código aberto sob a licença MIT. Sinta-se à vontade para contribuir!
 
-pyinstaller --onefile --noconsole --add-data "assets;assets" --add-data "ffmpeg;ffmpeg" --icon=assets/icon.png download_helper.py
+Desenvolvido por José Izata Quivula.
 
----
+
+
+
+**O que você precisa agora, José?** Gostaria que eu criasse o arquivo **.gitignore** para que você possa subir o código para o GitHub agora mesmo sem enviar as pastas de lixo?
