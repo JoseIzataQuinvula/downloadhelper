@@ -29,7 +29,8 @@ A organização do diretório segue o padrão de separação de responsabilidade
 * **Motor de Download:** yt-dlp (Suporte a Playlists e +1000 sites).
 * **Processamento de Mídia:** Integração nativa com FFmpeg para alta fidelidade de áudio e vídeo.
 * **Proteção Jurídica:** Termos de uso e política de privacidade integrados na interface do usuário (janela "Sobre").
-* **Multiplataforma:** * **Windows:** Compilação via PyInstaller e instalador profissional via Inno Setup.
+* **Multiplataforma:**
+* **Windows:** Compilação via PyInstaller e instalador profissional via Inno Setup.
 * **Android:** Geração de APK via Buildozer (Linux/Ubuntu).
 
 ---
@@ -78,14 +79,30 @@ A versão **v1.0.1-beta** corrige falhas de inicialização (tela preta). Para g
 
 ```bash
 pyinstaller --noconfirm downloadhelper.spec
-Para criar o instalador profissional, utilize o Inno Setup com o arquivo setup.iss.
 
-Para Android (APK)
+```
+
+*Para criar o instalador profissional, utilize o Inno Setup com o arquivo `setup.iss`.*
+
+### Para Android (APK)
+
 Em um ambiente Linux (Ubuntu/WSL2), execute:
 
-Bash
+```bash
 buildozer android debug
-## 📜 Licença e Privacidade
-Este projeto é de código aberto sob a licença **MIT**. O DownloadHelper respeita a sua privacidade: não coletamos dados e todo o processamento é feito localmente no seu dispositivo. Confira nossa [Política de Privacidade](https://github.com/JoseIzataQuinvula/downloadhelper/blob/main/PRIVACY_POLICY.md).
 
-Desenvolvido por José Izata Quivula.
+```
+
+---
+
+## 📜 Licença e Privacidade
+
+Este projeto é de código aberto sob a licença **MIT**.
+
+O **DownloadHelper** respeita a sua privacidade: não coletamos dados, não usamos rastreadores e todo o processamento é feito localmente no seu dispositivo.
+
+👉 Confira nossa [Política de Privacidade](https://github.com/JoseIzataQuinvula/downloadhelper/blob/main/PRIVACY_POLICY.md) para mais detalhes.
+
+---
+
+**Desenvolvido por José Izata Quivula.**
