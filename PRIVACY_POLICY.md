@@ -4,7 +4,7 @@
 **Versão:** 1.0.1-beta  
 **Desenvolvedor:** José Izata Quivula
 
-O **DownloadHelper** foi desenvolvido como uma ferramenta de código aberto voltada para a utilidade pública e privacidade do usuário. Esta política explica como lidamos com as informações no aplicativo.
+O **DownloadHelper** foi desenvolvido como uma ferramenta de código aberto voltada para a utilidade pública e a total privacidade do usuário. Esta política detalha o nosso compromisso com a transparência e a segurança dos teus dados.
 
 ---
 
@@ -12,38 +12,40 @@ O **DownloadHelper** foi desenvolvido como uma ferramenta de código aberto volt
 
 O DownloadHelper **NÃO coleta, não armazena e não compartilha** nenhuma informação pessoal, dados de navegação ou identificadores de dispositivos.
 
-* **Sem Telemetria:** Não utilizamos ferramentas de rastreamento ou análise de comportamento.
-* **Sem Contas:** Não é necessário criar conta ou fornecer e-mail para utilizar o software.
+* **Sem Telemetria:** Não utilizamos ferramentas de rastreamento, cookies ou análise de comportamento.
+* **Sem Contas:** O uso do software é anônimo; não é necessário criar conta, fornecer e-mail ou qualquer dado sensível.
 
-## 2. Processamento de Dados
+## 2. Processamento de Dados Local
 
-Todo o processamento de mídia (download, conversão e extração de áudio/vídeo) é realizado **exclusivamente de forma local** no dispositivo do usuário.
+Todo o processamento de mídia — incluindo o download, a conversão e a extração de áudio/vídeo — é realizado **exclusivamente de forma local** no teu dispositivo.
 
-* Os links de URL inseridos são processados diretamente pelos motores do `yt-dlp` e `FFmpeg`.
-* Nenhum dado sobre o que você baixa é enviado para nossos servidores ou para terceiros.
+* **Motores Internos:** As URLs inseridas são processadas diretamente pelos motores do `yt-dlp` e `FFmpeg` no teu hardware.
+* **Privacidade de Conteúdo:** Nenhum dado sobre o histórico de downloads ou o conteúdo dos ficheiros é enviado para servidores externos ou terceiros.
 
 ## 3. Permissões de Dispositivo
 
+O aplicativo solicita apenas as permissões estritamente necessárias para o seu funcionamento técnico:
+
 ### Para Windows
 
-* **Acesso ao Sistema de Arquivos:** Necessário apenas para salvar os vídeos baixados na pasta escolhida pelo usuário.
+* **Acesso ao Sistema de Arquivos:** Necessário apenas para salvar os ficheiros baixados na pasta de destino escolhida por ti.
 
 ### Para Android
 
-* **Armazenamento (Storage):** Necessário para gravar os arquivos de mídia na memória do celular.
-* **Internet:** Necessário para realizar a comunicação com os servidores de mídia para efetuar o download.
+* **Armazenamento (Storage):** Necessário para gravar os arquivos de mídia na memória interna ou cartão SD do dispositivo.
+* **Internet:** Necessário exclusivamente para estabelecer a ligação com os servidores de mídia e realizar o download dos ficheiros.
 
-## 4. Links de Terceiros
+## 4. Interação com Terceiros
 
-O aplicativo interage com plataformas de terceiros (como o YouTube). Ao utilizar o DownloadHelper, você está sujeito às Políticas de Privacidade e Termos de Serviço da plataforma de onde o conteúdo está sendo baixado.
+O DownloadHelper atua como uma interface para plataformas de terceiros (como YouTube, Facebook, Instagram, etc.). Ao utilizar a ferramenta, assumes a responsabilidade de estar em conformidade com as **Políticas de Privacidade** e os **Termos de Serviço** das plataformas de onde o conteúdo é extraído.
 
 ## 5. Isenção de Responsabilidade
 
-O DownloadHelper é uma ferramenta para uso pessoal. O usuário é o único responsável pelo conteúdo baixado e deve garantir que possui os direitos legais ou permissão para realizar o download, respeitando as leis de direitos autorais vigentes.
+O DownloadHelper é uma ferramenta destinada ao **uso pessoal**. Como desenvolvedor, José Izata Quivula não se responsabiliza pelo uso indevido do software. O utilizador é o único responsável por garantir que possui os direitos legais ou permissão para descarregar o conteúdo, respeitando sempre as leis de direitos autorais vigentes.
 
-## 6. Contato
+## 6. Contato e Transparência
 
-Se tiver dúvidas sobre esta política, você pode abrir uma *Issue* neste repositório do GitHub.
+Por ser um projeto de código aberto, a maior garantia de privacidade é a transparência do código. Se tiveres dúvidas ou sugestões sobre esta política, podes abrir uma *Issue* diretamente neste repositório do GitHub.
 
 ---
-*Este documento pode ser atualizado conforme novas funcionalidades forem adicionadas ao software.*
+*Este documento pode ser atualizado periodicamente para refletir novas funcionalidades ou mudanças regulatórias.*
